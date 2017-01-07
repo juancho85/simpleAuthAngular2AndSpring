@@ -1,8 +1,13 @@
 # simpleAuthAngular2AndSpring
 
-A simple angular 2 application with basic authentication using Spring security.
+A simple angular 2 application with basic DB authentication using Spring security.
 
 Simple navigation and a protected route only shown when logged-in:
 
+User
 User: user
-Password: password
+Password: user
+
+Admin
+User: admin
+Password: admin

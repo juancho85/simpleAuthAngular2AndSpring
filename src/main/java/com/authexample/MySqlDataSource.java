@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class MySqlDataSource {
 
     @Bean
-    @ConfigurationProperties(prefix = "spring.datasource")
+    @ConfigurationProperties(prefix = "mysql.local.datasource")
     public javax.sql.DataSource dataSource() {
         return DataSourceBuilder
                 .create()
