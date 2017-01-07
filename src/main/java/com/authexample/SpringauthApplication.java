@@ -33,7 +33,7 @@ public class SpringauthApplication {
 					.httpBasic()
 					.and()
 					.authorizeRequests()
-					.antMatchers("/index.html", "/signup", "/login").permitAll()
+					.antMatchers("/index.html", "/signup", "/login", "/logout").permitAll()
 					.anyRequest().authenticated().and()
 					.csrf()
 					.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
