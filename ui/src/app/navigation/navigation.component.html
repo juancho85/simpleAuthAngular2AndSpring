@@ -15,7 +15,7 @@
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><a [routerLink]="['signup']">Registrarse</a></li>
-        <li><a [routerLink]="['signin']">Identificarse</a></li>
+        <li><a [routerLink]="['login']">Identificarse</a></li>
         <li *ngIf="isAuth()"><a [routerLink]="['protected']">Protected Area</a></li>
         <li *ngIf="isAuth()"><a (click)="onLogout()" style="cursor: pointer;">Logout</a></li>
       </ul>
